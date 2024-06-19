@@ -21,6 +21,10 @@ nav {
   padding-right: 220px;
 }
 
+.section_2 {
+  padding: 7.8vw 230px;
+}
+
 @media screen and (max-width: 1550px) {
   nav {
     padding: 0 6%;
@@ -37,6 +41,10 @@ nav {
   .section_1 .slide_3 .text_wrap {
     padding-right: 6%;
   }
+
+  .section_2 {
+    padding: 7.8vw 6%;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -45,29 +53,25 @@ nav {
   }
 
   .section_1 .slide_1 .text_wrap {
-    padding: 0 3%;
+    padding: 0 4%;
   }
 
   .section_1 .slide_2 .text_wrap {
-    padding: 150px 3%;
+    padding: 150px 4%;
   }
 
   .section_1 .slide_3 .text_wrap {
     padding-right: 6%;
+  }
+
+  .section_2 {
+    padding: 7.8vw 4%;
   }
 }
 
 @media screen and (max-width: 1024px) {
   header {
     padding: 0 4%;
-  }
-
-  .section_1 .slide_1 .text_wrap {
-    padding: 0 4%;
-  }
-
-  .section_1 .slide_2 .text_wrap {
-    padding: 150px 4%;
   }
 }
 
