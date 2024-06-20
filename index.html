@@ -254,7 +254,7 @@
 
     <!-- section_2 -->
     <div class="section_2">
-      <div class="title_wrap">
+      <div class="title_wrap" data-aos-duration="2000">
         <h2>
           고객님과 함께한 18년의 시간<br />
           해미인치과가 가진 특별함
@@ -265,8 +265,11 @@
         </p>
       </div>
 
-      <div class="banner_wrap"></div>
+      <div class="banner_wrap" data-aos-duration="2000"></div>
     </div>
+
+    <!-- section_3 -->
+    <div class="section_3"></div>
 
     <footer></footer>
 
@@ -281,16 +284,24 @@
           clickable: true,
         },
         loop: true,
-        // autoplay: {
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         speed: 1800,
       });
     </script>
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      function AOS_MOBILE() {
+        if (matchMedia("screen and (max-width: 768px)").matches) {
+          $(".section_2 .title_wrap").attr("data-aos", "fade-up");
+          $(".section_2 .banner_wrap").attr("data-aos", "fade-up");
+        }
+      } // 768px 이하일 때 효과주기. 또한 이미 적용된 걸 변경도 가능.
+      AOS_MOBILE();
+
       AOS.init();
     </script>
   </body>
