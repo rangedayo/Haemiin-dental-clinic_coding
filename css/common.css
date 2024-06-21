@@ -22,7 +22,11 @@ nav {
 }
 
 .section_2 {
-  padding: 7.8vw 230px;
+  padding: 7.8vw 230px 0 230px;
+}
+
+.section_3 .con_wrap_1 .con {
+  padding-left: 230px;
 }
 
 @media screen and (max-width: 1550px) {
@@ -43,7 +47,11 @@ nav {
   }
 
   .section_2 {
-    padding: 7.8vw 6%;
+    padding: 7.8vw 6% 0 6%;
+  }
+
+  .blank_area .inner {
+    height: 7.8vw;
   }
 }
 
@@ -65,7 +73,11 @@ nav {
   }
 
   .section_2 {
-    padding: 100px 4%;
+    padding: 100px 4% 0 4%;
+  }
+
+  .blank_area .inner {
+    height: 100px;
   }
 }
 
